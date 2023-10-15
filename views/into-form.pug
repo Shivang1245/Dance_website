@@ -1,0 +1,30 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/index.js")
+
+
+block style 
+    style
+        include ../static/style.css
+        include ../static/stylecontact.css
+
+block content 
+    div.container 
+        h1 Enrollment Form
+        form(action="/into-form", method="post" class="myform")
+            input(type="text", class= "myinput", id= "name",name= "name", placeholder="enter your name")
+            input(type="phone", class= "myinput", id= "phone",name= "phone", placeholder="enter your phone")
+            input(type="email", class= "myinput", id= "email", name= "email", placeholder="enter your email id")
+            input(type="text", class= "myinput", id= "address", name= "address", placeholder="enter your address")
+            input(type="text", class= "myinput", id= "pack", name= "pack", placeholder="Enter the pack you wish to choose")
+            button(class="glow-on-hover", onclick='message()')
+                | submit
+    
+    //- div.message
+    //-     div.alert#danger
+    //-         | The form was not saved. Please recheck
+        
+        
+    //-     div.alert#success
+    //-         | The form was not saved. Please recheck

@@ -1,0 +1,48 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/index.js")
+
+
+block style 
+    style
+        include ../static/style.css
+        include ../static/styleclass-info.css
+block content
+    div.cardclass-info
+        h2 Bronze Plan
+        div.card-boxclass-info
+            div.card-img
+                img(src="/static/class-info/images.jpg")
+            div.card-content
+                p In this pack you will recieve lesson from a in - practice instructor on alternate days basis 
+    
+    div.cardclass-info
+        h2 Silver Plan
+        div.card-boxclass-info
+            div.card-img
+                img(src="/static/class-info/images (1).jpg")
+            div.card-content
+                p In this pack you will recieve lesson from a professional instructor on alternate days basis
+    
+    div.cardclass-info
+        h2 Gold Plan
+        div.card-boxclass-info
+            div.card-img
+                img(src="/static/class-info/7230478_2629.jpg")
+            div.card-content
+                p In this pack you will recieve lesson from a professional instructor on daily basis. Time slots will be disscussed on the time of formal introduction with the instructor    
+
+    div.cardclass-info
+        h2 Platinum Plan
+        div.card-boxclass-info
+            div.card-img
+                img(src="/static/class-info/young-sportive-man-daancing-breakdance-isolared-black-backgrounf-neon-with-mixed-lights.jpg")
+            div.card-content
+                p In this pack you will recieve lesson from a DID champion one day a week and a professional instructor on the rest of the days. The given day of week will be Sunday and the time slot is will be announced soon.
+                
+    button(class="glow-on-hover",onclick="location.href = 'upload'")
+        | UPLOAD VIDEO 
+
+    button(class="glow-on-hover",onclick="location.href = 'into-form'")
+        | ENROLL NOW 

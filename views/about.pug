@@ -1,0 +1,27 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/index.js")
+
+
+block style 
+    style
+        include ../static/styleabout.css
+block content
+    section#background 
+        h1 About  our  Dance Academy
+        
+    section#paragraph    
+        div.cardabout 
+            div.card-box
+                div.card-img
+                    img(src="/static/about/47.jpg")
+                div.card-content
+                    p Every year atleast five of our top students take part in the World's most prestegious dance competition - Starpower International Talent and Dance Competition
+
+        div.cardabout
+            div.card-box
+                div.card-img
+                    img(src="/static/about/starpower_logo.png")
+                div.card-content
+                    p The team we sent for The United States Dance/Drill Team Championship last year came first. 
